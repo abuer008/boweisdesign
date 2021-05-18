@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "boweisdesign.com.cn",
+    title: "交互设计与用户体验实验室",
+    description: "次世代的交互设计与传统产品的数码化，以及全新的UX设计认识论",
+    author: "bowei xiao"
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -32,5 +34,19 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID
+        }
+      }
+    },
+    // {
+    //   resolve: "gatsby-plugin-sass",
+    //   options: {
+    //     data:  `@import "${__dirname}/src/components/layout/styles";`,
+    //   }
+    // }
   ],
 };

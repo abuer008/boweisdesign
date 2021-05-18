@@ -1,0 +1,10 @@
+@import "base";
+
+body {
+  font-family: $sourceHan, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background: linear-gradient(90deg, white 33px, transparent 1%) right,
+  linear-gradient(white 33px, transparent 1%) center,
+  #999;
+  background-size: 35px 35px;
+  //background: ${overwrite ? backgroundColor : ''};
+}
